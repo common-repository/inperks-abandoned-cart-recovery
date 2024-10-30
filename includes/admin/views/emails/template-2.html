@@ -1,0 +1,87 @@
+<table style='background:#e0e3e6;width: 100%;color: #494b4d;font-size:16px;'>
+    <tr>
+        <td>
+            <table style="border-collapse: collapse;width:90%;max-width:550px;background: #ffffff;margin: 60px auto;padding: 0;">
+                <tr>
+                    <td style="padding: 20px;text-align: center" colspan="2">
+                        <img src="https://www.dropbox.com/s/n4umn8z609vjwcz/logo-1.png?raw=1"
+                             height="80px" alt="logo"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px;text-align: center" colspan="2">
+                        <div style="font-size: 26px;line-height: 42px;margin: 20px 10px;">
+                            We can't send your fabrics to you yet, because you haven't completed the purchase...
+                        </div>
+                        <div style="padding: 10px;background: #fff7eb">
+                            <div style="font-size: 20px;font-weight: bold;margin: 10px 0;">Get 10% OFF this purchase
+                            </div>
+                            <div style="font-size: 17px;line-height: 26px;">We've created an unique discount coupon
+                                especially for you. Use the coupon below and
+                                you'll save 10% on this order.
+                            </div>
+                            <div style="padding: 12px;border: 2px dashed #ff6579;margin: 17px;background: #fff;color: #ff6579;">
+                                {{coupon_code}}
+                            </div>
+                            <div style="margin: 20px 0;">
+                                <a href="{{coupon_apply_url}}"
+                                   style="display:inline-block;color: #ffffff;background: #ff6579;padding: 15px;text-decoration: none;border-radius: 5px;">Get
+                                    10% off today</a>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <p>Expires on: {{expire_time}}</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div style="text-align: center;font-size: 26px;margin: 20px auto;">Your cart</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px;" colspan="2">
+                        {{cart.items_table}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px;text-align: center;" colspan="2">
+                        <a href="{{cart.recovery_url}}"
+                           style="display:inline-block;background: #ff6579;text-decoration: none;padding: 15px;border: 1px solid #ff6579;border-radius: 5px;font-size: 18px;color: #ffffff !important;">Purchase
+                            these item now</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100%;" colspan="2">
+                        <div style="margin: 0 20px;padding: 20px 5px;">
+                            <p>If you need any help,Just reply to this email and we will get back to you as soon as
+                                possible.</p>
+                            <p style="text-align: right">
+                                Kindly,<br>
+                                Shop name
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background:#2c3034;padding: 15px;color:#cad2d1;text-align: center">
+                        <div>Shop name, Address 1, 98747.</div>
+                        <div style="margin-top: 16px;font-size: 12px;">No longer want to to receive emails <a href="#"
+                                                                                                              style="color: #5e5d5e;">Unsubscribe</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<style>
+    .acbwm-cart {
+        border-collapse: collapse;
+        background: #fff7eb;
+    }
+
+    .acbwm-cart th, .acbwm-cart td {
+        padding: 15px 5px;
+    }
+</style>
